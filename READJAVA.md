@@ -24,6 +24,6 @@
 　해당 메소드를 사용하면 C언어의 printf 함수처럼 서식 문자열을 사용한 형식 문자열을 만들 수 있다. String 클래스의 format 메소드는 리턴되는 문자열 형태를 지정하는 함수로, 이 함수를 활용하여 Math.round() 함수와 같이 소수점 n번째 자리까지 반올림하여 나타낼 수 있다.
 
 > double pie = 3.14159265;  
-> double pie2 = 3.14;
-> System.out.println(String.format("%.2f", pie)); // 3.14
+> double pie2 = 3.14;  
+> System.out.println(String.format("%.2f", pie)); // 3.14  
 > System.out.println(String.format("%.2f %.2f", pie, pie2)); // 3.14 3.14
