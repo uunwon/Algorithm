@@ -27,3 +27,9 @@
 > double pie2 = 3.14;  
 > System.out.println(String.format("%.2f", pie)); // 3.14  
 > System.out.println(String.format("%.2f %.2f", pie, pie2)); // 3.14 3.14
+
+
+## 3. next() vs nextLine()
+
+　next() : 문자 나 문자열을 공백 기준으로 한 단어 또는 한 문자씩 입력받는다.  
+　nextLine() : 문자 또는 문자 한라인 전체를 입력받는다.
