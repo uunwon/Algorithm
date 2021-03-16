@@ -33,3 +33,22 @@
 
 　next() : 문자 나 문자열을 공백 기준으로 한 단어 또는 한 문자씩 입력받는다.  
 　nextLine() : 문자 또는 문자 한라인 전체를 입력받는다.
+
+
+ 
+## 4. <a href="https://arabiannight.tistory.com/76">HaspMap</a>
+
+**Map 인터페이스를 구현한 대표적인 Map 컬렉션**  
+**HashMap<String, String> hm = new HashMap<String, String>();**  
+
+> hm.put(key, value);  
+> hm.get(key);  
+> hm.remove(key);  
+> hm.clear();  
+
+> hm.comtainsKey(key)  
+> hm.hasNext()  
+
+> hm.entrySet(), getKey(), getValue() // key, value 모두 필요시  
+> hm.keySet(), get(key) // key 필요  
+> hm.getOrDefault(key, defaultValue) // 찾는 키 존재시 찾는 키의 값 반환, 없을 시 기본값 반환  
