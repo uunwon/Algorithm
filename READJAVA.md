@@ -35,7 +35,7 @@
 　nextLine() : 문자 또는 문자 한라인 전체를 입력받는다.
 
  
-## 4. <a href="https://arabiannight.tistory.com/76">HaspMap</a>
+## 4. <a href="https://arabiannight.tistory.com/76" target="_blank">HaspMap</a>
 
 **Map 인터페이스를 구현한 대표적인 Map 컬렉션**  
 **HashMap<String, String> hm = new HashMap<String, String>();**  
@@ -55,5 +55,19 @@
 
 ## 5. Math.max/min
 
-　Math.max() : 두 인자 값 중 큰 값을 리턴하는 함수
+　Math.max() : 두 인자 값 중 큰 값을 리턴하는 함수  
 　Math.min() : 두 인자 값 중 작은 값을 리턴하는 함수
+ 
+ 
+## 6. <a href="https://jhnyang.tistory.com/92" target="_blank"> BufferedReader BufferedWriter </a>
+
+　버퍼는 데이터를 한 곳에서 다른 한 곳으로 전송하는 동안 일시적으로 그 데이터를 보관하는 임시 메모리 영역으로, 이 함수를 이용하면 입출력 속도가 더욱 향상한다. 입출력에 사용되는 Scanner의 경우 사용하기 편리하지만 속도가 느리다는 치명적인 단점이 있다. 그러므로 많은 데이터를 입력받아야 할 상황에서는 BufferedReader를 활용하자!
+ 
+> import java.io.*;  
+> BufferedReader br = new BufferedReader(new InputStreamReader(System.in));  
+> BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));  
+
+> br.readLine() // String type  
+> bw.write("")  
+> bw.flush()  
+> bw.close() br.close()  
