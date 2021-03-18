@@ -34,7 +34,6 @@
 　next() : 문자 나 문자열을 공백 기준으로 한 단어 또는 한 문자씩 입력받는다.  
 　nextLine() : 문자 또는 문자 한라인 전체를 입력받는다.
 
-
  
 ## 4. <a href="https://arabiannight.tistory.com/76">HaspMap</a>
 
@@ -52,3 +51,9 @@
 > hm.entrySet(), getKey(), getValue() // key, value 모두 필요시  
 > hm.keySet(), get(key) // key 필요  
 > hm.getOrDefault(key, defaultValue) // 찾는 키 존재시 찾는 키의 값 반환, 없을 시 기본값 반환  
+
+
+## 5. Math.max/min
+
+　Math.max() : 두 인자 값 중 큰 값을 리턴하는 함수
+　Math.min() : 두 인자 값 중 작은 값을 리턴하는 함수
