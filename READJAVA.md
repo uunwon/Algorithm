@@ -82,3 +82,14 @@
 > stk.countTokens()  
 > stk.hasMoreTokens()  
 > stk.nextToken()  
+
+## 8. <a href = "https://gmlwjd9405.github.io/2018/09/06/java-comparable-and-comparator.html">Interface Compararble vs Comparator </a>
+
+　**Comparable** : 정렬 수행 시 기본적으로 적용되는 정렬 기준이 되는 메소드를 정의하는 인터페이스  
+　**Comparator** : 정렬 가능한 클래스(Comparable 인터페이스를 구현한 클래스)들의 기본 정렬 기준과 다르게 정렬하고 싶을 때 사용하는 인터페이스, 기본적인 정렬 방법인 오름차순 정렬을 내림차순으로 정렬할 때 많이 사용한다.
+ 
+ > compare() or compareTo() 구현방식  
+ > 첫번째 파라미터로 넘어온 객체 < 두번째 파라미터로 넘어온 객체 : 음수 리턴  
+ > 첫번째 파라미터로 넘어온 객체 = 두번째 파라미터로 넘어온 객체 : 0 리턴  
+ > 첫번째 파라미터로 넘어온 객체 > 두번째 파라미터로 넘어온 객체 : 양수 리턴  
+ > 음수 또는 0이면 객체의 자리가 유지되며, 양수인 경우 두 객체의 자리가 변경된다.  
