@@ -33,8 +33,8 @@
 
 　next() : 문자 나 문자열을 공백 기준으로 한 단어 또는 한 문자씩 입력받는다.  
 　nextLine() : 문자 또는 문자 한라인 전체를 입력받는다.
-
- 
+  
+  
 ## 4. <a href="https://arabiannight.tistory.com/76" target="_blank">HaspMap</a>
 
 **Map 인터페이스를 구현한 대표적인 Map 컬렉션**  
@@ -51,14 +51,14 @@
 > hm.entrySet(), getKey(), getValue() // key, value 모두 필요시  
 > hm.keySet(), get(key) // key 필요  
 > hm.getOrDefault(key, defaultValue) // 찾는 키 존재시 찾는 키의 값 반환, 없을 시 기본값 반환  
-
-
+  
+  
 ## 5. Math.max/min
 
 　Math.max() : 두 인자 값 중 큰 값을 리턴하는 함수  
 　Math.min() : 두 인자 값 중 작은 값을 리턴하는 함수
- 
- 
+  
+  
 ## 6. <a href="https://jhnyang.tistory.com/92" target="_blank"> BufferedReader BufferedWriter </a>
 
 　버퍼는 데이터를 한 곳에서 다른 한 곳으로 전송하는 동안 일시적으로 그 데이터를 보관하는 임시 메모리 영역으로, 이 함수를 이용하면 입출력 속도가 더욱 향상한다. 입출력에 사용되는 Scanner의 경우 사용하기 편리하지만 속도가 느리다는 치명적인 단점이 있다. 그러므로 많은 데이터를 입력받아야 할 상황에서는 BufferedReader를 활용하자!
@@ -71,7 +71,8 @@
 > bw.write("")  
 > bw.flush()  
 > bw.close() br.close()  
-
+  
+  
 ## 7. StringTokenizer
 
 　문자열을 지정된 구분자를 기준으로 슬라이싱하는데 사용된다. 해당 클래스는 단 한개의 구분자를 사용해야 한다는 단점이 있으므로 복잡한 형태의 구분자로 문자열을 나눠야 할 때는 Scanner 나 split을 사용해야 한다.
@@ -82,7 +83,8 @@
 > stk.countTokens()  
 > stk.hasMoreTokens()  
 > stk.nextToken()  
-
+  
+  
 ## 8. <a href = "https://gmlwjd9405.github.io/2018/09/06/java-comparable-and-comparator.html">Interface Compararble vs Comparator </a>
 
 　**Comparable** : 정렬 수행 시 기본적으로 적용되는 정렬 기준이 되는 메소드를 정의하는 인터페이스  
@@ -93,7 +95,8 @@
  > 첫번째 파라미터로 넘어온 객체 = 두번째 파라미터로 넘어온 객체 : 0 리턴  
  > 첫번째 파라미터로 넘어온 객체 > 두번째 파라미터로 넘어온 객체 : 양수 리턴  
  > 음수 또는 0이면 객체의 자리가 유지되며, 양수인 경우 두 객체의 자리가 변경된다.  
-
+  
+  
 ## 9. Arrays.sort() vs Collections.sort()
 
 　배열 값들이 오름차순으로 숫자 -> 알파벳 -> 한글 순으로 정렬됨  
@@ -104,3 +107,14 @@
  
 　**Collections.sort()**  
    - List Collection(LinkedList, Vector, ArrayList)을 정렬해주는 자바의 패키지
+  
+  
+## 10. <a href="https://gangnam-americano.tistory.com/41"> Collection </a>
+
+　Collection 이란 데이터의 집합ㆍ그룹을 의미하며 JCF(Java Collections Framework)는 이러한 데이터, 자료구조인 컬렉션과 이를 구현하는 클래스를 정의하는 인터페이스를 제공한다. Collection 인터페이스는 크게 List, Set, Queue 3가지 상위 인터페이스로 분류할 수 있다. Map 의 경우 Collection 인터페이스를 상속받고 있지 않지만 Collection 으로 분류된다. 이들은 배열과 다르게 정적 메모리 할당이 아닌 **동적 메모리 할당**을 한다.
+ 
+　① **Set 인터페이스** : 순서가 중요하지 않은 목록, 중복 비허용 (HashSet, TreeSet)  
+　② **List 인터페이스** : 순서가 있는 목록, 중복 허용 (ArrayList, Vector, LinkedList)  
+　③ **Queue 인터페이스** : 먼저 들어온 것이 먼저 나감 (LinkedList, PriorityQueue)  
+　④ **Map 인터페이스** : key-value 형태로 저장, 순서 유지되지 않음, 키 중복 비허용 but 값 중복 허용 (Hashtable, HashMap, TreeMap)  
+ 
