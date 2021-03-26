@@ -118,3 +118,12 @@
 　③ **Queue 인터페이스** : 먼저 들어온 것이 먼저 나감 (LinkedList, PriorityQueue)  
 　④ **Map 인터페이스** : key-value 형태로 저장, 순서 유지되지 않음, 키 중복 비허용 but 값 중복 허용 (Hashtable, HashMap, TreeMap)  
  
+
+## 11. Iterator
+
+　Iterator 란 자바의 Collection 프레임워크에서 Collection 에 저장되어있는 요소들에 순차적으로 접근하며 읽어오는 방법을 표준화한 것이다.
+ 
+ > hasNext() : 읽어올 요소가 남아있는지 확인  
+ > next() : 다음 데이터 반환  
+ > remove() : next() 로 읽어온 요소 삭제  
+
