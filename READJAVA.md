@@ -124,6 +124,6 @@
 　Iterator 란 자바의 Collection 프레임워크에서 Collection 에 저장되어있는 요소들에 순차적으로 접근하며 읽어오는 방법을 표준화한 것이다.
  
  > hasNext() : 읽어올 요소가 남아있는지 확인  
- > next() : 다음 데이터 반환  
+ > next() : 다음 데이터 반환   
  > remove() : next() 로 읽어온 요소 삭제  
 
