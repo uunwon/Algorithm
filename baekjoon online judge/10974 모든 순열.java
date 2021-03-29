@@ -1,5 +1,4 @@
 // 10974 모든 순열
-package projectJob;
 import java.util.*;
 import java.io.*;
 import java.math.*;
