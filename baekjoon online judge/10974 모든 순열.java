@@ -1,4 +1,10 @@
 // 10974 모든 순열
+// https://adrian0220.tistory.com/36
+// https://kutar37.tistory.com/entry/%EC%9E%90%EB%B0%94-String-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EB%A9%94%EC%86%8C%EB%93%9C
+// http://wawoops67.blogspot.com/2013/01/android-charsequence-string.html
+// https://www.acmicpc.net/problem/10974
+// https://brenden.tistory.com/10
+package projectJob;
 import java.util.*;
 import java.io.*;
 import java.math.*;
