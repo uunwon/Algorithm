@@ -127,3 +127,9 @@
  > next() : 다음 데이터 반환   
  > remove() : next() 로 읽어온 요소 삭제  
 
+
+## 12. for-each 문
+
+ > for (type var : iterate) {  
+ > 　　body-of-loop  
+ > }    
