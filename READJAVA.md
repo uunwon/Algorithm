@@ -126,10 +126,3 @@
  > hasNext() : 읽어올 요소가 남아있는지 확인  
  > next() : 다음 데이터 반환   
  > remove() : next() 로 읽어온 요소 삭제  
-
-
-## 12. for-each 문
-
- > for (type var : iterate) {  
- > 　　body-of-loop  
- > }    
