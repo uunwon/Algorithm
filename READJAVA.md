@@ -132,3 +132,20 @@
 
 　배열이름.toString() : 배열의 주소 값 출력  
 　**Arrays.toString(배열이름)** : 배열의 내용 출력
+
+
+## 13. <a href = "https://codechacha.com/ko/java-sort-map/"> Map 정렬 방법 </a>
+
+　① **LinkedHashMap**  
+ 　　LinkedHashMap 은 Map 에 입력한 순서가 보장되는 클래스다.  
+ 　　HashMap 을 원하는 순서대로 정렬하고 이 순서대로 다시 LinkedHashMap 에 입력하면 정렬된 순서대로 출력할 수 있다.  
+   
+　② **TreeMap**  
+ 　　TreeMap 은 아이템을 추가할 때 설정한 Comparator 로 정렬되어 저장되도록 구현된 클래스다.  
+ 　　따라서 값을 추가한 후에 다시 정렬할 필요가 없다.  
+ > Comparator<String> comparator = (s1, s2) -> s2.compareTo(s1);  
+ > TreeMap<String, String> tmap = new TreeMap<>(comparator);  
+
+　③ **List**  
+ 　　keySet 또는 values 를 List 로 가져온 후에, 정렬하는 방법이다.  
+ 　　둘 중에 한 종류만 정렬이 필요한 경우 이 방법을 사용한다.  
