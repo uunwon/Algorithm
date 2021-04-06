@@ -149,3 +149,17 @@
 　③ **List**  
  　　keySet 또는 values 를 List 로 가져온 후에, 정렬하는 방법이다.  
  　　둘 중에 한 종류만 정렬이 필요한 경우 이 방법을 사용한다.  
+
+
+## 13. Stack (스택) 클래스
+
+　자료구조 중 하나인 스택의 사전적 정의는 '쌓다', '더미' 이다. 상자에 물건을 쌓아 올리듯이 데이터를 쌓아 올리는 자료구조다. 스택의 가장 큰 특징은 나중에 들어간 것이 먼저 나오는 LIFO(Last In First Out) 의 형태를 띄는 것이다. 자바에서 Stack 은 java.util.Stack 을 import 하여 사용할 수 있다. 또한 그래프의 **깊이 우선 탐색(DFS)** 과 **재귀적(Recursion) 함수**를 호출 할 때 사용된다.  
+ 
+  > import java.util.Stack;  
+  > Stack<String> stack = new Stack<>();  
+
+  > public Element push(Element item);  
+  > public Element pop();   
+  > public Element peek(); // 가장 상단 값 출력  
+  > public boolean empty();  
+  > public int search(Object o); // 인자값으로 받은 데이터의 위치 반환  
