@@ -163,3 +163,17 @@
   > public Element peek(); // 가장 상단 값 출력  
   > public boolean empty();  
   > public int search(Object o); // 인자값으로 받은 데이터의 위치 반환  
+
+
+## 13. Queue (큐) 클래스 
+
+　큐의 사전적 의미는 무엇을 기다리는 사람, 차량 등의 줄 혹은 줄을 서서 기다리는 것을 의미한다. 큐는 데이터를 일시적으로 쌓아두기 위한 자료구조로 스택과는 다르게 FIFO(First In First Out) 의 형태를 가진다. 자바에서 Queue 는 java.util.Queue 를 import 하여 사용할 수 있다. 또한 그래프의 **넓이 우선 탐색(BFS)** 와 **컴퓨터 버퍼** 에서 주로 사용된다.
+ 
+  > import java.util.LinkedList;  
+  > import java.util.Queue;  
+  > Queue<String> queue = new LinkedList<>();  
+
+  > public void offer(Element data);  
+  > public Element poll();   
+  > public Element peek(); // 가장 상단 값 출력  
+  > public boolean empty();  
