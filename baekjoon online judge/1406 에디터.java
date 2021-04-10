@@ -1,22 +1,24 @@
-// 9012 괄호
+// 1406 에디터
 package projectJob;
 import java.util.*;
 import java.io.*;
 
-class Main {
-	public static String makeEditor(String s, int M) throws IOException {
-		Stack<Character> stack = new Stack<>();
+class Main {	
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		for(int i = 0; i < s.length(); i++) {
-			stack.add(s.charAt(i));
+		Stack<Character> stack = new Stack<>();
+		String str = br.readLine();
+		int M = Integer.parseInt(br.readLine());
+		
+		for(int i = 0; i < str.length(); i++) {
+			stack.add(str.charAt(i));
 		}
 		
 		int cursor = stack.size();
 		
 		while (M-- > 0) {
-			String c = br.readLine();
-			c = c.replaceAll(" " , "");
+			String c = br.readLine().replace(" ", "");
 			
 			switch(c.charAt(0)) {
 				case 'L':
@@ -28,8 +30,11 @@ class Main {
 						cursor++;
 					break;
 				case 'B':
-					if(cursor > -1)
-						stack.remove(cursor-- - 1);
+					if(cursor > 0) {
+						stack.remove(cursor - 1);
+						cursor--;
+					} else if (cursor == 0)
+						continue;
 					break;
 				case 'P':
 					stack.add(cursor++, c.charAt(1));
@@ -37,14 +42,7 @@ class Main {
 			}
 		}
 		
-		return stack.toString();
-	}
-	
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String str = br.readLine();
-		int M = Integer.parseInt(br.readLine());
-		
-		System.out.println(makeEditor(str, M));
+		for(int i = 0; i < stack.size(); i++)
+			System.out.print(stack.get(i));
 	}
 }
