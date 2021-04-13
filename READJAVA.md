@@ -187,3 +187,11 @@
  
   > StringBuffer sb = new StringBuffer("hello");  
   > sb.append(" world");  
+
+
+## 17. 접근제어자
+
+　① **private** : 변수, 메소드는 해당 클래스에서만 접근 가능  
+　② **default** : 접근제어자를 별도로 설정하지 않으면 해당 default 처리되어 해당 패키지 내에서만 접근 가능  
+　③ **protected** : 변수, 메소드는 동일 패키지 내의 클래스 또는 해당 클래스를 상속받은 외부 패키지의 클래스에서 접근 가능  
+　④ **public** : 변수, 메소드는 어떤 클래스에서라도 접근 가능  
