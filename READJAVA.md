@@ -177,3 +177,21 @@
   > public Element poll();   
   > public Element peek(); // 가장 상단 값 출력  
   > public boolean empty();  
+
+
+## 16. <a href="https://ifuwanna.tistory.com/221"> String vs StringBuffer vs StringBuilder </a>
+
+　String 과 두 클래스의 차이점은 String 은 **불변(immutable)** 의 속성을 갖는다는 점이다. 불변성을 지니기 때문에 변하지 않는 문자열을 자주 읽어들이는 경우 String을 사용하면 좋은 성능을 기대할 수 있다. 그러나 문자열 추가ㆍ수정ㆍ삭제 등의 연산이 빈번하게 발생할 때 String 클래스를 사용하면 힙 메모리(Heap) 메모리에 많은 임시 가비지(Garbage)가 생성되어 성능에 치명적인 영향을 끼친다. 이같은 상황에서 **가변성(mutable)** 을 가지는 StringBuffer/StringBuilder 클래스를 도입하면 동일한 객체 내에서 문자열을 변경하는 것이 가능하다.
+ 
+　StringBuffer 와 StringBuilder 의 차이점은 **동기화의 유무**다. StringBuffer는 동기화를 지원하여 멀티쓰레드 환경에서 안전(thread-safe)하다. 반대로 StringBuilder는 동기화를 지원하지 않아 멀티쓰레드 환경에는 적합하지 않지만, 단일쓰레드에서의 성능은 뛰어나다.
+ 
+  > StringBuffer sb = new StringBuffer("hello");  
+  > sb.append(" world");  
+
+
+## 17. 접근제어자
+
+　① **private** : 변수, 메소드는 해당 클래스에서만 접근 가능  
+　② **default** : 접근제어자를 별도로 설정하지 않으면 해당 default 처리되어 해당 패키지 내에서만 접근 가능  
+　③ **protected** : 변수, 메소드는 동일 패키지 내의 클래스 또는 해당 클래스를 상속받은 외부 패키지의 클래스에서 접근 가능  
+　④ **public** : 변수, 메소드는 어떤 클래스에서라도 접근 가능  
