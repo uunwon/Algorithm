@@ -205,3 +205,16 @@
   > 바이너리 코드를 검증한다.  
   > 바이너리 코드를 실행한다.  
   > 실행환경(Runtime Environment)의 규격을 제공한다. (필요한 라이브러리 및 기타파일)
+
+
+## 19. Wrapper 클래스
+
+　자바의 자료형은 크게 기본 타입(primitive type)과 참조 타입(reference type)으로 나눠진다. 자바는 기본적으로 객체 지향 언어이므로 객체를 대상으로 처리하는 경우가 많다. 이럴 때 기본 자료 타입을 객체로 다루기 위해서 사용하는 클래스들을 Wrapper 클래스라고 한다. Byte, Short, Integer, Long, Character, Double, Float, Boolean 클래스 등이 기본 데이터 타입에 해당되는 Wrapper 클래스이다. Wrapper 클래스들은 java.lang 패키지에서 제공된다.
+
+ > Integer i = new Integer(10);  
+ > Boolean b = new Boolean(true);
+
+　기본 데이터 타입을 Wrapper 클래스로 변환하는 것을 **박싱(boxing)** 이라 하고, 반대의 경우를 **언박싱(unboxing)** 이라고 칭한다. 이는 JDK 1.5 부터 자동으로 이루어지며, 자동 박싱ㆍ자동 언박싱이라고 부른다.
+ 
+ > Integer ten = new Integer(10); // 박싱  
+ > int i = ten.intValue(); // 언박싱  
