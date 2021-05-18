@@ -75,7 +75,7 @@
   
 ## 7. StringTokenizer
 
-　문자열을 지정된 구분자를 기준으로 슬라이싱하는데 사용된다. 해당 클래스는 단 한개의 구분자를 사용해야 한다는 단점이 있으므로 복잡한 형태의 구분자로 문자열을 나눠야 할 때는 Scanner 나 split을 사용해야 한다.
+　문자열을 지정된 구분자를 기준으로 슬라이싱하는데 사용된다. 해당 클래스는 단 한개의 구분자를 사용해야 한다는 단점이 있으므로 복잡한 형태의 구분자로 문자열을 나눠야 할 때는 **Scanner 나 split** 을 사용해야 한다.
 
 > StringTokenizer stk = new StringTokenizer(string);  
 > StringTokenizer stk = new StringTokenizer(string, "-"); // delim 설정  
