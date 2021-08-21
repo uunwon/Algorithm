@@ -1,7 +1,13 @@
-// 10871 번 풀면서 
-import java.util.*;
-import java.math.*;
+// https://jjjhong.tistory.com/53
 
-fun main() = with(Scanner(System.`in`)){
-    println(nextInt() + nextInt())
+import java.util.*;
+
+fun main() = with(Scanner(System.`in`)) {
+    val n = nextInt()
+    val x = nextInt()
+
+    for(i in 1..n) {
+        val temp = nextInt()
+        if(temp < x) print("$temp ")
+    }
 }
