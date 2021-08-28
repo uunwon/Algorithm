@@ -1,7 +1,16 @@
-// BufferedReader : https://jjjhong.tistory.com/53
-// https://ncucu.me/179?category=903354
-
 import java.util.*;
+
+/* fun main() = with(Scanner(System.`in`)) {
+    val score = nextInt()
+
+    when {
+        (score > 89) -> println("A")
+        (score > 79) -> println("B")
+        (score > 69) -> println("C")
+        (score > 59) -> println("D")
+        else -> println("F")
+    }
+} */
 
 fun main() = with(Scanner(System.`in`)) {
     val score = nextInt()
