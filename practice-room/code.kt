@@ -2,17 +2,17 @@
 // https://ncucu.me/179?category=903354
 
 import java.util.*;
+import java.io.BufferedReader
+import java.io.InputStreamReader
 
-fun main() = with(Scanner(System.`in`)) {
-    val score = nextInt()
+// https://hanyeop.tistory.com/178
+// https://meoru-tech.tistory.com/57
+fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
+    val n = readLine().toInt()
+    val arr = ArrayList<IntArray>()
 
-    print(
-        when{
-            score > 89 -> "A"
-            score > 79 -> "B"
-            score > 69 -> "C"
-            score > 59 -> "D"
-            else -> "F"
-        }
-    )
+    for(i in 0 until n) {
+        arr.add(readLine().split(" ").map { it.toInt() }.toIntArray())
+    }
+    
 }
