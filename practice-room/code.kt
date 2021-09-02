@@ -1,18 +1,21 @@
-// BufferedReader : https://jjjhong.tistory.com/53
-// https://ncucu.me/179?category=903354
+// https://kkh0977.tistory.com/630
+// https://youjourney.github.io/archivers/BOJ2752
+// https://www.acmicpc.net/problem/2752
 
 import java.util.*;
-import java.io.BufferedReader
-import java.io.InputStreamReader
+import java.io.*;
 
-// https://hanyeop.tistory.com/178
-// https://meoru-tech.tistory.com/57
-fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
-    val n = readLine().toInt()
-    val arr = ArrayList<IntArray>()
+fun main() = with(System.`in`.bufferedReader()) {
+    val bw = BufferedWriter(OutputStreamWriter(System.out))
+    val token = StringTokenizer(readLine())
+    val arr = ArrayList<Int>(3)
 
-    for(i in 0 until n) {
-        arr.add(readLine().split(" ").map { it.toInt() }.toIntArray())
-    }
-    
+    for (i in 0 .. arr.size)
+        arr.add(token.nextToken().toInt())
+
+    for (i in 0 .. arr.size)
+        println(arr[i].toString())
+
+    bw.flush()
+    bw.close()
 }
