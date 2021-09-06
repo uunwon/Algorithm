@@ -1,8 +1,6 @@
-package javaPractice;
-
 import java.io.*;
 
-public class code {
+public class Main {
 	public static void divide_alphabet(String word) {
 		for(int i = 'a'; i <= 'z' ; i++) {
 			int temp = 0;
