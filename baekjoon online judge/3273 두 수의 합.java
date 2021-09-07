@@ -1,8 +1,7 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-public class code {
+public class Main {
 	public static void count_pair(int len, String arr, int num) {
 		StringTokenizer st = new StringTokenizer(arr);
 		int[] ary = new int[len];
