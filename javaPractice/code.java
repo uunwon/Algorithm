@@ -13,17 +13,6 @@ public class code {
 		for(int i = 0; i < len;i++)
 			ary[i] = Integer.parseInt(st.nextToken());
 
-		Arrays.sort(ary);
-
-		while(start < end) {
-			int sum = ary[start] + ary[end];
-
-			if(sum == num) cnt++;
-
-			if(sum <= num) start++;
-			else end--;
-		}
-
 		System.out.println(cnt);
 	}
 
