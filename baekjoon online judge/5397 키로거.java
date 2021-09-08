@@ -1,8 +1,7 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-public class code {
+public class Main {
 	public static void find_password(String str) {
 		Stack<String> lstack = new Stack<>();
 		Stack<String> rstack = new Stack<>();
