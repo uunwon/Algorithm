@@ -1,8 +1,7 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-public class code {
+public class Main {
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Queue<Integer> sQueue = new LinkedList<>();
@@ -18,11 +17,11 @@ public class code {
 
 		while(!sQueue.isEmpty()) {
 			for(int i = 0; i < idx; i++) {
-					if(i == (idx - 1))
-						sb.append(sQueue.poll() + ", ");
-					else
-						sQueue.add(sQueue.poll());
-				}
+				if(i == (idx - 1))
+					sb.append(sQueue.poll() + ", ");
+				else
+					sQueue.add(sQueue.poll());
+			}
 		}
 
 		System.out.println(sb.substring(0, sb.length() - 2) + ">");
