@@ -5,26 +5,36 @@ import java.util.*;
 public class code {
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		Queue<Integer> sQueue = new LinkedList<>();
-		StringBuilder sb = new StringBuilder();
-		sb.append("<");
+		int num = Integer.parseInt(br.readLine());
+		LinkedList<Integer> queue = new LinkedList<>();
 
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		int len = Integer.parseInt(st.nextToken());
-		int idx = Integer.parseInt(st.nextToken());
-
-		for(int i = 0; i < len; i++)
-			sQueue.add(i+1);
-
-		while(!sQueue.isEmpty()) {
-			for(int i = 0; i < idx; i++) {
-					if(i == (idx - 1))
-						sb.append(sQueue.poll() + ", ");
-					else
-						sQueue.add(sQueue.poll());
-				}
+		while(num-- != 0) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			String com = st.nextToken();
+			
+			switch(com) {
+				case "push" :
+					queue.add(Integer.parseInt(st.nextToken()));
+					break;
+				case "front" :
+					if(!queue.isEmpty()) System.out.println(queue.getFirst());
+					else System.out.println(-1);
+					break;
+				case "back" : 
+					if(!queue.isEmpty()) System.out.println(queue.getLast());
+					else System.out.println(-1);
+				case "empty" :
+					if(queue.isEmpty()) System.out.println(1);
+					else System.out.println(0);
+					break;
+				case "pop" :
+					if(!queue.isEmpty()) System.out.println(queue.removeLast());
+					else System.out.println(-1);
+					break;
+				case "size" :
+					System.out.println(queue.size());
+					break;
+			}
 		}
-
-		System.out.println(sb.substring(0, sb.length() - 2) + ">");
 	}
 }
