@@ -1,8 +1,7 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-public class code {
+public class Main {
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int num = Integer.parseInt(br.readLine());
@@ -16,6 +15,18 @@ public class code {
 				case "push" :
 					queue.add(Integer.parseInt(st.nextToken()));
 					break;
+				case "front" :
+					if(!queue.isEmpty()) System.out.println(queue.getFirst());
+					else System.out.println(-1);
+					break;
+				case "back" : 
+					if(!queue.isEmpty()) System.out.println(queue.getLast());
+					else System.out.println(-1);
+					break;
+				case "empty" :
+					if(queue.isEmpty()) System.out.println(1);
+					else System.out.println(0);
+					break;
 				case "pop" :
 					if(!queue.isEmpty()) System.out.println(queue.removeFirst());
 					else System.out.println(-1);
@@ -23,19 +34,6 @@ public class code {
 				case "size" :
 					System.out.println(queue.size());
 					break;
-				case "empty" :
-						if(queue.isEmpty()) System.out.println(1);
-						else System.out.println(0);
-						break;
-				case "front" :
-					if(!queue.isEmpty()) System.out.println(queue.getFirst());
-					else System.out.println(-1);
-					break;
-				case "back" : 
-					if(!queue.isEmpty()) System.out.println(queue.getLast());
-					else System.out.println(-1); 
-					break;
-				
 			}
 		}
 	}
