@@ -2,30 +2,31 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, NumberFormatException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int num = Integer.parseInt(br.readLine());
-		Stack<Integer> stack = new Stack<>();
+		Stack<int[]> stack = new Stack<>();
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		StringBuilder sb = new StringBuilder();
 
-		for(int i = 0; i < num; i++) // 스택 채워넣기
-			stack.add(Integer.parseInt(st.nextToken()));
-		
-		while(num-- != 0){
-			int build = stack.pop();
-			int temp = 0;
+		for(int i = 1; i <= num; i++) {
+			int n = Integer.parseInt(st.nextToken());
 
-			for(int i = num; i > 0; i--) {
-				if(build <= stack.elementAt(i-1)) {
-					sb.append(i).append(" ");
-					temp++;
+			while(!stack.empty()) {
+				if(stack.peek()[1] < n)
+					stack.pop();
+				else {
+					sb.append(stack.peek()[0]).append(" ");
 					break;
 				}
 			}
-			if(temp == 0)
-				sb.append(0).append(" ");
+			
+			if(stack.empty())
+				sb.append("0 ");
+			
+			stack.push(new int[] {i, n});
 		}
+		
 		System.out.println(sb);
 	}
 }
