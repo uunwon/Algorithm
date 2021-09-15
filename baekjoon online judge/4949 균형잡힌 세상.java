@@ -1,8 +1,7 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-public class code {
+public class Main {
 	public static String solve(String s) {
 		Stack<Character> stack = new Stack<>();
 		int len = s.length();
