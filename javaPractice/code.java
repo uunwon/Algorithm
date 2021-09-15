@@ -3,9 +3,10 @@ import java.io.*;
 import java.util.*;
 
 public class code {
-	public static String solve(String s) {
+	public static int solve(String s) {
 		Stack<Character> stack = new Stack<>();
 		int len = s.length();
+		int answer = 0;
 
 		for(int i = 0; i < len; i++) {
 			char c = s.charAt(i);
@@ -14,41 +15,35 @@ public class code {
 				stack.push(c);
 
 			else if(c == ')') {
-				if(!stack.isEmpty() && stack.peek() == '(')
+				if(!stack.isEmpty() && stack.peek() == '(') {
 					stack.pop();
+					answer += 2;
+				}
 				else
-					return "no";
+					return 0;
 			}
 
 			else if(c == ']') {
-				if(!stack.isEmpty() && stack.peek() == '[')
+				if(!stack.isEmpty() && stack.peek() == '[') {
 					stack.pop();
+					answer += 2;
+				}
 				else
-					return "no";
+					return 0;
 
 			}
 		}
 
 		if(stack.isEmpty())
-			return "yes";
+			return answer;
 		else
-			return "no";
+			return 0;
 	}
 
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuilder sb = new StringBuilder();
-		String s;
-
-		while(true) {
-			s = br.readLine();
-
-			if(s.equals("."))
-				break;
-
-			sb.append(solve(s)).append("\n");
-		}
-
-		System.out.print(sb);
+		String s = br.readLine();
+		
+		System.out.println(solve(s));
 	}
 }
