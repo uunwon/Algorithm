@@ -1,13 +1,7 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-// ** 별 두 개짜리
-// 스택 - **탑, **스택 수열
-// 덱 - **회전하는 큐, AC
-// 스택의 활용 - 괄호의 값
-
-public class code {
+public class Main {
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Stack<Integer> stack = new Stack<>();
