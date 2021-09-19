@@ -1,5 +1,5 @@
 # Algorithm
-algorithm study for improving coding ability
+Algorithm study for improving coding ability
 
 ### Get Started 
 kotlin
