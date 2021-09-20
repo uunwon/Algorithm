@@ -1,13 +1,6 @@
-package javaPractice;
 import java.io.*;
 
-// ** 별 두 개짜리
-// 스택 - **탑, **스택 수열
-// 덱 - **회전하는 큐, AC
-// https://velog.io/@cheal3/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%B1%EC%A4%80-1926-%EA%B7%B8%EB%A6%BC-%EC%9E%90%EB%B0%94
-// https://iseunghan.tistory.com/311
-
-public class code {
+public class Main {
 	public static int countNumber(int num) {
 		int ans = 0;
 		int a = 0; // 100의 자리
