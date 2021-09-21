@@ -1,21 +1,20 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-public class code {
+public class Main {
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st;
-		String s;
 
-		while((s = br.readLine()) != null) {
-			st = new StringTokenizer(s, " ");
+		while(true) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
 
-			if(st.hasMoreTokens())
-				bw.write((Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())) + "\n");
-			else
+			if(a == 0 && b == 0)
 				break;
+				
+			bw.write((a + b) + "\n");
 		}
 
 		bw.flush();

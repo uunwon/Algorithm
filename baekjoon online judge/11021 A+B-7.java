@@ -1,21 +1,15 @@
-package javaPractice;
 import java.io.*;
 import java.util.*;
 
-public class code {
+public class Main {
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st;
-		String s;
+		int num = Integer.parseInt(br.readLine());
 
-		while((s = br.readLine()) != null) {
-			st = new StringTokenizer(s, " ");
-
-			if(st.hasMoreTokens())
-				bw.write((Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())) + "\n");
-			else
-				break;
+		for(int i = 0; i < num; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			bw.write("Case #" + (i + 1) + ": " + ((Integer.parseInt(st.nextToken())) + (Integer.parseInt(st.nextToken()))) + "\n");
 		}
 
 		bw.flush();
